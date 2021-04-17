@@ -3,7 +3,6 @@ import 'package:findme_quiz/controllers/question_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:websafe_svg/websafe_svg.dart';
 
 import 'background.dart';
 import 'progress_bar.dart';
@@ -26,9 +25,17 @@ class Body extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
             padding: EdgeInsets.all(kDefaultPadding),
-            decoration: BoxDecoration(
+            decoration: new BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(25),
+              borderRadius: new BorderRadius.circular(15.0),
+              boxShadow: <BoxShadow>[
+                new BoxShadow(
+                    color: Colors.black38,
+                    blurRadius: 2.0,
+                    spreadRadius: 1.0,
+                    offset: new Offset(0.0, 1.0)),
+              ],
+             // borderRadius: BorderRadius.circular(25),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

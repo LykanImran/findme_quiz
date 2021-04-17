@@ -8,7 +8,7 @@ const kBlackColor = Color(0xFF101010);
 
 const primaryColor  = Color(0xFFa25ed9);
 const primaryGradient = LinearGradient(
-  colors: [Color(0xFFa561da), Color(0xFF9516f4
+  colors: [Color(0xFF9516f4), Color(0xFFa561da
   )],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
