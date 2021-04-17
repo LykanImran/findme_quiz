@@ -56,7 +56,7 @@ class ScoreScreen extends StatelessWidget {
                         children: [
                           TextSpan(
                             text:
-                                "${_qnController.correctAns * 10}/${_qnController.questions.length * 10}",
+                                "${_qnController.correctAns }/${_qnController.questions.length}",
                             style: Theme.of(context)
                                 .textTheme
                                 .headline5
@@ -130,13 +130,14 @@ class ScoreScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
+
         children: [
           Icon(
             Icons.circle,
             color: color,
           ),
           SizedBox(
-            width: 5,
+            width: 10,
           ),
           Text.rich(
             TextSpan(
